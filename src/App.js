@@ -36,6 +36,7 @@ function App() {
           >
             Component 2
           </a>
+          <span>&nbsp;|&nbsp;</span>
           <a
             href="/component-3"
             style={{ display: "inline-block", color: "white" }}

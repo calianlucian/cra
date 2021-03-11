@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Component1 from "./components/component1";
 import Component2 from "./components/component2";
+import Component3 from "./components/component3";
 import "./App.css";
 
 function App() {
@@ -35,6 +36,12 @@ function App() {
           >
             Component 2
           </a>
+          <a
+            href="/component-3"
+            style={{ display: "inline-block", color: "white" }}
+          >
+            Component 3
+          </a>
         </div>
         <Router>
           <Switch>
@@ -43,6 +50,9 @@ function App() {
             </Route>
             <Route exact path="/component-2">
               <Component2 />
+            </Route>
+            <Route exact path="/component-3">
+              <Component3 />
             </Route>
           </Switch>
         </Router>
